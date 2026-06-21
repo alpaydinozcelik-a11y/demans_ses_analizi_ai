@@ -18,7 +18,7 @@ st.divider()
 def modeli_yukle():
     with open("models/scaler.pkl", "rb") as f:
         scaler = pickle.load(f)
-    with open("/models/tahmin_modeli.pkl", "rb") as f:
+    with open("models/tahmin_modeli.pkl", "rb") as f:
         model = pickle.load(f)
     return scaler, model
 
